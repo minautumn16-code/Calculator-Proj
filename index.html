@@ -365,7 +365,23 @@ footer {
   border-color: var(--rose) !important;
 }
 /* -------------------------- */
+/* This fixes the dark purple and background on phones */
+  @media (max-width: 768px) {
+    body {
+      filter: brightness(1.3) contrast(0.9);
+    }
+    
+    /* This makes your Happy Birthday text lighter */
+    h1, .happy-birthday-title { 
+      color: #f3e5f5 !important; /* A very light, soft lavender */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Makes it pop */
+    }
 
+    /* This brightens the dark purple areas */
+    .container, .card, .overlay {
+      background-color: rgba(106, 13, 173, 0.6) !important; /* Lighter purple */
+    }
+  }
 </style>
 </head>
 <body>
